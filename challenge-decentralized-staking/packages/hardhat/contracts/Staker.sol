@@ -24,4 +24,17 @@ contract Staker {
     // Add a `timeLeft()` view function that returns the time left before the deadline for the frontend
 
     // Add the `receive()` special function that receives eth and calls stake()
+
+    mapping ( address => uint256 ) public balances;
+    uint256 public constant threshold = 1 ether;
+
+    event Stake(address indexed sender, uint256 amount);
+
+    function stake() public payable {
+        // Cập nhật số dư của người gửi
+        balances[msg.sender] += msg.value;
+
+        // Bắn sự kiện để giao diện cập nhật
+        emit Stake(msg.sender, msg.value);
+    }
 }
