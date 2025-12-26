@@ -12,37 +12,7 @@ If the threshold is met by the deadline, the funds are sent to an external contr
 
 ## 🚀 Features & Checkpoints Completed
 
-I have successfully completed Checkpoints 1 to 5:
-
-- [x] **Checkpoint 1: Staking Logic**
-
-  - Implemented `stake()` function to allow users to deposit ETH.
-  - Tracked individual balances using `mapping`.
-  - Emitted `Stake` events for UI updates.
-
-- [x] **Checkpoint 2: State Machine & Timing**
-
-  - Added a `deadline` and `threshold` (1 ETH).
-  - Implemented `execute()`:
-    - If `Balance >= Threshold` & `Time < Deadline` → Sends funds to External Contract.
-    - If `Time > Deadline` & `Not enough funds` → Enables Withdrawal.
-  - Created `timeLeft()` helper for the frontend countdown.
-
-- [x] **Checkpoint 3: UX & Withdraw**
-
-  - Implemented `withdraw()` allowing users to reclaim funds if the campaign fails.
-  - Added `receive()` function to handle direct ETH transfers to the contract address.
-  - Secured against Re-entrancy attacks.
-
-- [x] **Checkpoint 4: Deploy to Testnet**
-
-  - Configured Deployer Wallet.
-  - Deployed Smart Contract to **Sepolia Testnet**.
-  - Updated deadline logic for real-world usage (72 hours).
-
-- [x] **Checkpoint 5: Ship Frontend**
-  - Deployed the Next.js Frontend to **Vercel**.
-  - Connected the live DApp to the Sepolia Smart Contract.
+I have successfully completed Checkpoints 1 to 5
 
 ---
 
@@ -60,6 +30,30 @@ I have successfully completed Checkpoints 1 to 5:
 ## 💻 How to Run Locally
 
 1. **Clone the repo & install dependencies:**
-   ```bash
-   yarn install
-   ```
+
+```bash
+yarn install
+```
+
+2. **How to run the code:**
+
+```bash
+# CMD 1
+yarn chain
+```
+
+```bash
+# CMD 2
+yarn deloy --reset
+yarn deloy
+```
+
+```bash
+# CMD 1
+yarn start
+```
+
+3. **Test in FE:**
+
+Get money then go to the "Stacker UI" and test the Contact you deloy.
+Or go to Debug Contact for more infomation and description.
