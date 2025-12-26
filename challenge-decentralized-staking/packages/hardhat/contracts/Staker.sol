@@ -28,7 +28,7 @@ contract Staker {
     mapping ( address => uint256 ) public balances;
     uint256 public constant threshold = 1 ether;
 
-    uint256 public deadline = block.timestamp + 30 seconds;
+    uint256 public deadline = block.timestamp + 60 seconds;
     bool public openForWithdraw = false;
 
     event Stake(address indexed sender, uint256 amount);
@@ -57,9 +57,7 @@ contract Staker {
 
     function withdraw() public {
         require(openForWithdraw, "Not open for withdraw");
-        
         uint256 amount = balances[msg.sender];
-        
         require(amount > 0, "You have no balance to withdraw");
 
         balances[msg.sender] = 0;
@@ -72,9 +70,11 @@ contract Staker {
     function timeLeft() public view returns (uint256) {
         if (block.timestamp >= deadline) {
             return 0;
-        } else {
-            return deadline - block.timestamp;
-        }
+        } 
+        return deadline - block.timestamp;
     }
 
+    receive() external payable {
+        stake();
+    }
 }
