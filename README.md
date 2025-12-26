@@ -49,7 +49,7 @@ yarn deloy
 ```
 
 ```bash
-# CMD 1
+# CMD 3
 yarn start
 ```
 
