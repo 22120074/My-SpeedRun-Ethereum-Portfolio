@@ -7,7 +7,7 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   31337: {
     YourToken: {
-      address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      address: "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
       abi: [
         {
           inputs: [],
@@ -334,7 +334,7 @@ const deployedContracts = {
         transfer: "@openzeppelin/contracts/token/ERC20/ERC20.sol",
         transferFrom: "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       },
-      deployedOnBlock: 1,
+      deployedOnBlock: 5,
     },
   },
 } as const;
