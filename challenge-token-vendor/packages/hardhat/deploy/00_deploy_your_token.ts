@@ -35,7 +35,7 @@ const deployYourToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
   // Get the deployed contract
   const yourToken = await hre.ethers.getContract<Contract>("YourToken", deployer);
   // Để mint tiền
-  await yourToken.transferOwnership("0xA6f6148f6Ca1B1b330e08D07aaafB6B8D80b4F98");
+  // await yourToken.transferOwnership("0xA6f6148f6Ca1B1b330e08D07aaafB6B8D80b4F98");
 };
 
 export default deployYourToken;

@@ -13,7 +13,7 @@ contract YourToken is ERC20, Ownable {
         _mint(msg.sender, 2000 * 10 ** 18);
     }
 
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
-    }
+    // function mint(address to, uint256 amount) public onlyOwner {
+    //     _mint(to, amount);
+    // }
 }
