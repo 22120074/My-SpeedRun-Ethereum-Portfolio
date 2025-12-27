@@ -55,13 +55,13 @@ Users can exchange ETH for tokens and vice versa. It involves handling `approve`
 
 ### 🌟 Live Demo
 
-- **Frontend (Vercel):**
+- **Frontend (Vercel):** [https://challenge-token-vendor.vercel.app/]
 
 ---
 
 ## 🚀 Features & Checkpoints Completed
 
-I have successfully completed Checkpoints 1 to 3
+I have successfully completed Checkpoints 1 to 6
 
 **Alert**:
 
@@ -96,3 +96,5 @@ yarn start
 ```
 
 3. **Test in FE:**
+
+You can join Wallet and test the vendor.
