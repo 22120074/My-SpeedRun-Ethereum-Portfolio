@@ -62,7 +62,12 @@ contract Vendor is Ownable {
     }
 
     function withdraw() public onlyOwner {
-        (bool sent, ) = msg.sender.call{value: address(this).balance}("");
+        uint256 ownerBalance = address(this).balance;
+        require(ownerBalance > 0, "Owner has not balance to withdraw");
+
+        (bool sent,) = msg.sender.call{value: ownerBalance}("");
         require(sent, "Failed to send Ether");
     }
+
+    
 }

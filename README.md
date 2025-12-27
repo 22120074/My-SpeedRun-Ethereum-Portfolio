@@ -12,7 +12,7 @@ If the threshold is met by the deadline, the funds are sent to an external contr
 
 ## 🚀 Features & Checkpoints Completed
 
-I have successfully completed Checkpoints 1 to 5
+I have successfully completed Checkpoints 1 to 6
 
 ---
 
@@ -61,7 +61,7 @@ Users can exchange ETH for tokens and vice versa. It involves handling `approve`
 
 ## 🚀 Features & Checkpoints Completed
 
-I have successfully completed Checkpoints 1 to 2
+I have successfully completed Checkpoints 1 to 3
 
 **Alert**:
 
