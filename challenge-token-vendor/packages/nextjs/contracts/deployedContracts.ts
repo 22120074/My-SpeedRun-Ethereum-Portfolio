@@ -7,7 +7,7 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   31337: {
     Vendor: {
-      address: "0x162A433068F51e18b7d13932F27e66a3f99E6890",
+      address: "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
       abi: [
         {
           inputs: [
@@ -203,10 +203,10 @@ const deployedContracts = {
         renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",
         transferOwnership: "@openzeppelin/contracts/access/Ownable.sol",
       },
-      deployedOnBlock: 96,
+      deployedOnBlock: 3,
     },
     YourToken: {
-      address: "0x1429859428C0aBc9C2C47C8Ee9FBaf82cFA0F20f",
+      address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
       abi: [
         {
           inputs: [],
@@ -471,24 +471,6 @@ const deployedContracts = {
           type: "function",
         },
         {
-          inputs: [
-            {
-              internalType: "address",
-              name: "to",
-              type: "address",
-            },
-            {
-              internalType: "uint256",
-              name: "amount",
-              type: "uint256",
-            },
-          ],
-          name: "mint",
-          outputs: [],
-          stateMutability: "nonpayable",
-          type: "function",
-        },
-        {
           inputs: [],
           name: "name",
           outputs: [
@@ -628,7 +610,7 @@ const deployedContracts = {
         renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",
         transferOwnership: "@openzeppelin/contracts/access/Ownable.sol",
       },
-      deployedOnBlock: 93,
+      deployedOnBlock: 1,
     },
   },
   11155111: {
