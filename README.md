@@ -16,17 +16,6 @@ I have successfully completed Checkpoints 1 to 5
 
 ---
 
-## 🛠 Tech Stack
-
-- **Solidity:** Smart Contract Logic.
-- **Scaffold-ETH 2:** Development framework.
-- **Next.js & DaisyUI:** Frontend interface.
-- **Hardhat:** Ethereum development environment.
-- **Vercel:** Frontend Hosting.
-- **Sepolia:** Public Testnet.
-
----
-
 ## 💻 How to Run Locally
 
 1. **Clone the repo & install dependencies:**
@@ -57,3 +46,53 @@ yarn start
 
 Get money then go to the "Stacker UI" and test the Contact you deloy.
 Or go to Debug Contact for more infomation and description.
+
+# 🚩 Challenge 2: 🏵 Token Vendor 🤖
+
+This is the second challenge of the Speed Run Ethereum curriculum. The goal is to build a **Token Vendor** (like a Vending Machine) that handles the buying and selling of your own ERC20 token using ETH.
+
+Users can exchange ETH for tokens and vice versa. It involves handling `approve` patterns for ERC20 transfers and managing contract balances.
+
+### 🌟 Live Demo
+
+- **Frontend (Vercel):**
+
+---
+
+## 🚀 Features & Checkpoints Completed
+
+I have successfully completed Checkpoints 1 to 2
+
+**Alert**:
+
+Ở Checkpoint 2 nên có đủ ETH để có thể giao dịch. Nếu Vendor muốn có token phải lấy từ Deloyer, mà trước đó ta phải mint vào Deloyer lẫn Ví Frontend.
+
+---
+
+## 💻 How to Run Locally
+
+1. **Clone the repo & install dependencies:**
+
+```bash
+yarn install
+```
+
+2. **How to run the code:**
+
+```bash
+# CMD 1
+yarn chain
+```
+
+```bash
+# CMD 2
+yarn deloy --reset
+yarn deloy
+```
+
+```bash
+# CMD 3
+yarn start
+```
+
+3. **Test in FE:**

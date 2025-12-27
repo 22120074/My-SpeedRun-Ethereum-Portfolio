@@ -1,6 +1,6 @@
 import { HardhatRuntimeEnvironment } from "hardhat/types";
 import { DeployFunction } from "hardhat-deploy/types";
-// import { Contract } from "ethers";
+import { Contract } from "ethers";
 
 /**
  * Deploys a contract named "YourToken" using the deployer account and
@@ -33,7 +33,9 @@ const deployYourToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
   });
 
   // Get the deployed contract
-  // const yourToken = await hre.ethers.getContract<Contract>("YourToken", deployer);
+  const yourToken = await hre.ethers.getContract<Contract>("YourToken", deployer);
+  // Để mint tiền
+  await yourToken.transferOwnership("0xA6f6148f6Ca1B1b330e08D07aaafB6B8D80b4F98");
 };
 
 export default deployYourToken;
