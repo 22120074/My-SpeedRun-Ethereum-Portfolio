@@ -44,8 +44,10 @@ yarn start
 
 3. **Test in FE:**
 
-Get money then go to the "Stacker UI" and test the Contact you deloy.
-Or go to Debug Contact for more infomation and description.
+Lấy tiền từ Ví - [Wallet] rồi đến "Stacker UI" và kiểm tra The Contact mà mình deloy lên.
+Hoặc là đi đến Debug Contact để có thểm nhiều thông tin và hàm.
+
+Sau đó bạn có thể Stack tiền vào Stacker Contact, Nếu đến hạn mà đủ quỹ thì Excute, còn không thì nhấn Excute rồi Withdraw để nhận tiền.
 
 # 🚩 Challenge 2: 🏵 Token Vendor 🤖
 
@@ -97,4 +99,4 @@ yarn start
 
 3. **Test in FE:**
 
-You can join Wallet and test the vendor.
+Bạn có thể mua Token hoặc là bán Token cho Vendor, mọi phương thức đều cần ETH. Sau đó nếu bạn là người Owner bạn còn có thể rút tiền từ Vendor về Ví - [Wallet] của mình
